@@ -56,3 +56,31 @@ export const KV_CREDENTIAL_ENCRYPTION_KEY = 'credential_encryption_key';
 // 搜索配额
 export const KV_SEARCH_QUOTA = 'search_quota';
 export const KV_SEARCH_QUOTA_REPORT = 'search_quota_report';
+
+// ═══ 直播频道级测速（方案 D+）══════════════════════════
+export const KV_CHANNEL_SPEED_MAP = 'channel_speed_map';
+export const KV_CHANNEL_PROBE_ENABLED = 'channel_probe_enabled';
+export const KV_CHANNEL_PROBE_STATUS = 'channel_probe_status';
+export const KV_CHANNEL_MERGED_TREE = 'channel_merged_tree'; // 最近一次合并的频道树（供 probe 使用）
+
+// 聚合日志
+export const KV_AGG_LOGS = 'agg_logs';
+export const AGG_LOGS_MAX = 50;
+export const KV_SITE_SNAPSHOT = 'site_snapshot';
+
+// 背景设置
+export const KV_BG_SETTINGS = 'bg_settings';
+
+// 分组排序
+export const KV_GROUP_ORDER = 'group_order';
+
+// 高级去重配置
+export const KV_DEDUP_CONFIG = 'dedup_config';
+
+// 频道测速 cron：每 12 小时
+export const CHANNEL_PROBE_CRON = '0 */12 * * *';
+// 并发与超时
+export const CHANNEL_PROBE_CONCURRENCY = 50;
+export const CHANNEL_PROBE_TIMEOUT_MS = 5000;
+// 缓存过期（7 天）
+export const CHANNEL_SPEED_TTL_MS = 7 * 24 * 60 * 60 * 1000;
